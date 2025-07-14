@@ -14,6 +14,7 @@ class CustomDrwar extends StatelessWidget {
       color: Colors.white,
       child: CustomScrollView(
         slivers: [
+          SliverToBoxAdapter(child: SizedBox(height: 20)),
           SliverToBoxAdapter(
             child: UserInfoListTile(
               imageUrl: AppImages.imagesFrame,
