@@ -21,7 +21,7 @@ class _DrwarItemsListViewState extends State<DrwarItemsListView> {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: ListView.builder(
+      child: SliverList.builder(
         itemBuilder: (context, index) => DrwarItem(
           drwarItemModel: drwarItems[index],
           isActive: index == currentIndex,
