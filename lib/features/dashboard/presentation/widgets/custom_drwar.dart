@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:resposive_dashboard/core/utils/app_images.dart';
 import 'package:resposive_dashboard/features/dashboard/data/models/drwar_item_model.dart';
+import 'package:resposive_dashboard/features/dashboard/data/models/user_info_model.dart';
 import 'package:resposive_dashboard/features/dashboard/presentation/widgets/drwar_item.dart';
 import 'package:resposive_dashboard/features/dashboard/presentation/widgets/drwar_items_list_view.dart';
 import 'package:resposive_dashboard/features/dashboard/presentation/widgets/user_info_list_tile.dart';
@@ -17,9 +18,9 @@ class CustomDrwar extends StatelessWidget {
           SliverToBoxAdapter(child: SizedBox(height: 20)),
           SliverToBoxAdapter(
             child: UserInfoListTile(
-              imageUrl: AppImages.imagesFrame,
+              userInfoModel:UserInfoModel(imageUrl: AppImages.imagesFrame,
               subtitle: 'demo@gmail.com',
-              title: 'Lekan Okeowo',
+              title: 'Lekan Okeowo',) ,
             ),
           ),
           SliverToBoxAdapter(child: SizedBox(height: 8)),
