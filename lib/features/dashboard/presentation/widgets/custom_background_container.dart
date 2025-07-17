@@ -15,7 +15,7 @@ class CustomBackgroundContainer extends StatelessWidget {
         left: padding ?? 20,
         right: padding ?? 20,
         top: 10,
-        bottom: 14,
+        bottom: 10,
       ),
       child: Container(
         padding: const EdgeInsets.all(10),
