@@ -16,7 +16,6 @@ class CustomButon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 50,
       child: ElevatedButton(
         style: ButtonStyle(
           elevation: WidgetStatePropertyAll(0),
@@ -28,14 +27,9 @@ class CustomButon extends StatelessWidget {
           backgroundColor: WidgetStatePropertyAll(backgroundColor),
         ),
         onPressed: () {},
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 40),
-          child: Text(
-            title,
-            style: AppStyles.styleSemiBold18(
-              context,
-            ).copyWith(color: textColor),
-          ),
+        child: Text(
+          title,
+          style: AppStyles.styleSemiBold18(context).copyWith(color: textColor),
         ),
       ),
     );
