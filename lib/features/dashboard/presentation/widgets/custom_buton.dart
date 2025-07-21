@@ -16,12 +16,14 @@ class CustomButon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
+      height: 52,
+      width: 266,
       child: ElevatedButton(
         style: ButtonStyle(
           elevation: WidgetStatePropertyAll(0),
           shape: WidgetStatePropertyAll(
             RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(border ?? 10),
+              borderRadius: BorderRadius.circular(border ?? 12),
             ),
           ),
           backgroundColor: WidgetStatePropertyAll(backgroundColor),

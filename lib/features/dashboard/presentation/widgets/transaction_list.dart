@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:resposive_dashboard/features/dashboard/data/models/tranaction_model.dart';
-import 'package:resposive_dashboard/features/dashboard/presentation/widgets/desktop_layout.dart';
 import 'package:resposive_dashboard/features/dashboard/presentation/widgets/transaction_item.dart';
 
 class TransactionList extends StatelessWidget {

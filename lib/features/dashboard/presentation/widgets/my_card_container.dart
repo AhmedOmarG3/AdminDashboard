@@ -9,7 +9,7 @@ class MyCardContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 420 / 215,
+      aspectRatio: 320 / 150.5,
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),

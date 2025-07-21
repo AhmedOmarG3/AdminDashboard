@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:resposive_dashboard/core/utils/styles.dart';
-import 'package:resposive_dashboard/features/dashboard/presentation/widgets/desktop_layout.dart';
 import 'package:resposive_dashboard/features/dashboard/presentation/widgets/transaction_history_header.dart';
 import 'package:resposive_dashboard/features/dashboard/presentation/widgets/transaction_list.dart';
 
@@ -14,7 +13,7 @@ class TransactionHistorySection extends StatelessWidget {
       children: [
         TransactionHistoryHeader(),
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 20),
+          padding: const EdgeInsets.symmetric(vertical: 10),
           child: Text(
             '13 April 2022',
             style: AppStyles.styleMedium16(
