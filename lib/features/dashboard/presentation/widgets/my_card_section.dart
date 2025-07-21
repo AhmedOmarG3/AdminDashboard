@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:resposive_dashboard/core/utils/styles.dart';
 import 'package:resposive_dashboard/features/dashboard/presentation/widgets/card_page_view.dart';
 import 'package:resposive_dashboard/features/dashboard/presentation/widgets/custom_dots.dart';
-import 'package:resposive_dashboard/features/dashboard/presentation/widgets/desktop_layout.dart';
 
 class MyCardSection extends StatefulWidget {
   const MyCardSection({super.key});
