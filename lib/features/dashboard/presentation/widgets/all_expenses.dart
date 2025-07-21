@@ -11,7 +11,7 @@ class AllExpenses extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 10),
       child: CustomBackgroundContainer(
-        child: Column(children: [AllExpensesHeader(), AllExpensesItemsRow()]),
+        child: Column(children: [CustomHeader(title: 'All Expenses',), AllExpensesItemsRow()]),
       ),
     );
   }

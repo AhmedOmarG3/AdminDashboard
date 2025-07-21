@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:resposive_dashboard/core/utils/styles.dart';
 
-class ExpensesHeaderIcon extends StatelessWidget {
-  const ExpensesHeaderIcon({
+class HeaderIcon extends StatelessWidget {
+  const HeaderIcon({
     super.key,
   });
 
