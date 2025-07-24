@@ -5,5 +5,9 @@ class PieChartSectionModel {
   final double value;
   final Color color;
 
- const PieChartSectionModel({required this.title, required this.value, required this.color});
+  const PieChartSectionModel({
+    required this.title,
+    required this.value,
+    required this.color,
+  });
 }

@@ -44,10 +44,7 @@ class _IncomeSectionState extends State<IncomeSection> {
               Expanded(
                 child: AspectRatio(
                   aspectRatio: 50 / 20,
-                  child: SizedBox(
-                    height: 30,
-                    child: PieChart(getPieChartData()),
-                  ),
+                  child: PieChart(getPieChartData()),
                 ),
               ),
               Expanded(
