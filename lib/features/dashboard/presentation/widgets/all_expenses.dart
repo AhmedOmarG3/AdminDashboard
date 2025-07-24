@@ -8,10 +8,12 @@ class AllExpenses extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 10),
-      child: CustomBackgroundContainer(
-        child: Column(children: [CustomHeader(title: 'All Expenses',), AllExpensesItemsRow()]),
+    return CustomBackgroundContainer(
+      child: Column(
+        children: [
+          CustomHeader(title: 'All Expenses'),
+          AllExpensesItemsRow(),
+        ],
       ),
     );
   }

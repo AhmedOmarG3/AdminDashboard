@@ -34,27 +34,31 @@ class _IncomeSectionState extends State<IncomeSection> {
   ];
   @override
   Widget build(BuildContext context) {
-    return CustomBackgroundContainer(
-      child: Column(
-        children: [
-          CustomHeader(title: 'Income'),
-
-          Row(
-            children: [
-              Expanded(
-                child: AspectRatio(
-                  aspectRatio: 50 / 20,
-                  child: PieChart(getPieChartData()),
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: CustomBackgroundContainer(
+        
+        child: Column(
+          children: [
+            CustomHeader(title: 'Income'),
+      
+            Row(
+              children: [
+                Expanded(
+                  child: AspectRatio(
+                    aspectRatio: 50 / 20,
+                    child: PieChart(getPieChartData()),
+                  ),
                 ),
-              ),
-              Expanded(
-                child: IncomItemsList(
-                  pieChartSectionModelList: pieChartSectionModelList,
+                Expanded(
+                  child: IncomItemsList(
+                    pieChartSectionModelList: pieChartSectionModelList,
+                  ),
                 ),
-              ),
-            ],
-          ),
-        ],
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

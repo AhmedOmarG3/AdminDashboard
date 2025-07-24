@@ -6,6 +6,7 @@ class CustomBackgroundContainer extends StatelessWidget {
     required this.child,
     this.padding,
   });
+  
   final Widget child;
   final double? padding;
   @override
@@ -14,7 +15,7 @@ class CustomBackgroundContainer extends StatelessWidget {
       padding: EdgeInsets.only(
         left: padding ?? 20,
         right: padding ?? 20,
-        top: 10,
+        
       ),
       child: Container(
         padding: const EdgeInsets.all(10),

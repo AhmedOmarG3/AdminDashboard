@@ -9,16 +9,20 @@ class OuickInvoice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomBackgroundContainer(
-      child: Column(
-        children: [
-          QuickInvoiceHeader(),
-          SizedBox(height: 20),
-          LatestTransactionSection(),
-          Divider(color: Color(0xffF1F1F1), height: 48, indent: 10),
-
-          QuickInvoiceForm(),
-        ],
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: CustomBackgroundContainer(
+        
+        child: Column(
+          children: [
+            QuickInvoiceHeader(),
+            SizedBox(height: 20),
+            LatestTransactionSection(),
+            Divider(color: Color(0xffF1F1F1), height: 48, indent: 10),
+      
+            QuickInvoiceForm(),
+          ],
+        ),
       ),
     );
   }

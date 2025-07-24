@@ -12,15 +12,18 @@ class CustomDrwar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.of(context).size.width * 0.7,
       color: Colors.white,
       child: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(child: SizedBox(height: 20)),
           SliverToBoxAdapter(
             child: UserInfoListTile(
-              userInfoModel:UserInfoModel(imageUrl: AppImages.imagesFrame,
-              subtitle: 'demo@gmail.com',
-              title: 'Lekan Okeowo',) ,
+              userInfoModel: UserInfoModel(
+                imageUrl: AppImages.imagesFrame,
+                subtitle: 'demo@gmail.com',
+                title: 'Lekan Okeowo',
+              ),
             ),
           ),
           SliverToBoxAdapter(child: SizedBox(height: 8)),

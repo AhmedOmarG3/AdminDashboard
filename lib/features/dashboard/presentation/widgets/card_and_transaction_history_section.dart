@@ -8,15 +8,18 @@ class CardAndTransactionHistorySection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomBackgroundContainer(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: CustomBackgroundContainer(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
 
-        children: [
-          MyCardSection(),
-          Divider(color: Color(0xffF1F1F1), height: 30, indent: 10),
-          TransactionHistorySection(),
-        ],
+          children: [
+            MyCardSection(),
+            Divider(color: Color(0xffF1F1F1), height: 30, indent: 10),
+            TransactionHistorySection(),
+          ],
+        ),
       ),
     );
   }

@@ -12,7 +12,13 @@ class DesktopLayout extends StatelessWidget {
       children: [
         Expanded(flex: 3, child: CustomDrwar()),
 
-        Expanded(flex: 7, child: AlleExpensesAndOuickInvoiceSection()),
+        Expanded(
+          flex: 7,
+          child: Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: AlleExpensesAndOuickInvoiceSection(),
+          ),
+        ),
 
         Expanded(flex: 5, child: MyCardTransactionsAndIncomeSection()),
       ],
