@@ -7,11 +7,10 @@ class IncomItemsList extends StatelessWidget {
   final List<PieChartSectionModel> pieChartSectionModelList;
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      itemCount: pieChartSectionModelList.length,
-      itemBuilder: (context, index) =>
-          IncomeItem(pieChartSectionModel: pieChartSectionModelList[index]),
+    return Column(
+      children: pieChartSectionModelList
+          .map((e) => IncomeItem(pieChartSectionModel: e))
+          .toList(),
     );
   }
 }

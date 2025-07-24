@@ -10,7 +10,10 @@ class MyCardTransactionsAndIncomeSection extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 10),
       child: Column(
-        children: [CardAndTransactionHistorySection(), IncomeSection()],
+        children: [
+          CardAndTransactionHistorySection(),
+        
+         IncomeSection()],
       ),
     );
   }

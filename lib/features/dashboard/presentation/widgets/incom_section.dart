@@ -37,16 +37,16 @@ class _IncomeSectionState extends State<IncomeSection> {
     return Padding(
       padding: const EdgeInsets.only(top: 10),
       child: CustomBackgroundContainer(
-        
         child: Column(
           children: [
             CustomHeader(title: 'Income'),
-      
+
             Row(
               children: [
-                Expanded(
+                SizedBox(
+                  width: 200,
                   child: AspectRatio(
-                    aspectRatio: 50 / 20,
+                    aspectRatio: 200 / 140,
                     child: PieChart(getPieChartData()),
                   ),
                 ),
